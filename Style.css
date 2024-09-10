@@ -1,0 +1,91 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f7fc;
+  padding: 0 20px;
+}
+
+#container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group img {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+input {
+  width: 100%; /* Ajuste para ficar do mesmo tamanho do botão */
+  padding: 10px 10px 10px 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  width: 100%; /* O botão também ocupa 100% da largura do container */
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  display: none;
+  text-align: center;
+}
+
+#result h2, #result h3 {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  body {
+      padding: 0 40px; /* Maior espaço nas bordas em telas menores */
+  }
+
+  input {
+      padding: 10px 10px 10px 35px;
+      width: 100%; /* Ajuste para campos de input */
+  }
+
+  .input-group img {
+      width: 18px;
+      height: 18px;
+  }
+}
+

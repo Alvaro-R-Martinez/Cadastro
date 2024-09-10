@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Simples</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="form">
+            <div class="input-group">
+                <img src="./imgs/name-icon.png" alt="Nome">
+                <input type="text" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="input-group">
+                <img src="./imgs/city-icon.png" alt="Cidade">
+                <input type="text" id="city" placeholder="Digite sua cidade">
+            </div>
+            <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+
+        <div id="result">
+            <h2 id="displayName"></h2>
+            <h3 id="displayCity"></h3>
+            <button onclick="voltar()">Voltar</button>
+        </div>
+    </div>
+    <script src="./Script.js"></script>
+</body>
+</html>
+
